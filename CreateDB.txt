@@ -1,0 +1,62 @@
+CREATE TABLE messages
+      (ID INTEGER PRIMARY KEY AUTOINCREMENT,
+       POSTCODE       INTEGER     NOT NULL,
+       NAME           CHAR(255)   NOT NULL,
+       DESCR          CHAR(1024)  NOT NULL,
+       LINK           CHAR(255)   UNIQUE ON CONFLICT IGNORE,
+       SEND           INT         NOT NULL); 
+       
+CREATE TABLE postcodes
+    (ID INTEGER PRIMARY KEY AUTOINCREMENT,
+     POSTCODE       INT         NOT NULL,
+     WIJK           CHAR(1024)  NOT NULL,
+     SUBWIJK        CHAR(1024));
+     
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3450,'Vleuten-De Meern','Vleuten');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3451,'Vleuten-De Meern','Vleuten');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3452,'Vleuten-De Meern','Vleuten - Vleuterweide');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3453,'Vleuten-De Meern','De Meern');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3454,'Vleuten-De Meern','De Meern');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3511,'Binnenstad','Binnenstad ten westen van de Oudegracht tot aan het spoor');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3512,'Binnenstad','Binnenstad ten oosten van de Oudegracht');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3513,'Noordwest','Pijlsweerd incl 1e Daalsebuurt');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3514,'Noordoost','Vogelenbuurt, Lauwerecht');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3515,'Noordoost','Tuinwijk, Staadsliedenbuurt, Lauwerecht');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3521,'Binnenstad','Dichterswijk');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3521,'Zuidwest','Dichterswijk');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3522,'Zuidwest','Rivierenwijk');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3523,'Zuid','Tolsteeg/Hoograven');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3524,'Zuid','Lunetten');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3525,'Zuid','Hoograven');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3526,'Zuidwest','Kanaleneiland-zuid, Transwijk-zuid');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3527,'Zuidwest','Kanaleneiland-noord, Transwijk-noord');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3528,'Leidsche Rijn','Papendorp');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3531,'West','Lombok/Leidseweg');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3532,'West','Spinozaplantsoen eo Thomas a Kempisplantsoen eo Majellapark, Nieuw Engeland');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3533,'West','Oog in Al, Halve Maan, Den Hommel, Welgelegen');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3534,'West','Schepenburg, bedrijventerrein Cartesiusweg');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3541,'Leidsche Rijn','Hogeweide');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3542,'West','bedrijventerrein Lage Weide');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3543,'Leidsche Rijn','');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3544,'Leidsche Rijn','');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3545,'Leidsche Rijn','');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3546,'Leidsche Rijn','');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3551,'Noordwest','2e Daalsebuurt, Egelantierstraat,Mariendaalstraat, Bloemenbuurt en Boomgaardlaan eo');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3552,'Noordwest','Ondiep, Evert Zoudenbalchstraat eo, Loevenhoutsedijk eo');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3553,'Noordwest','Elinkwijk eo Julianapark eo');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3554,'Noordwest','Muinck Keizerlaan eo, Schaakbuurt eo, Geuzenwijk, De Driehoek');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3555,'Noordwest','Bedrijventerrein Demkagebied, Prins Bernhardplein eo, Queeckhovenplein eo, Zuilen-Noord');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3561,'Overvecht','Taag- en Rubicondreef eo, Wolga- en Donaudreef eo');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3562,'Overvecht','Zamenhofdreef eo, Neckardreef eo');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3563,'Overvecht','Amazone- en Nicaraguadreef eo');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3564,'Overvecht','Zambesidreef eo, Tigris- en Bostondreef eo');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3565,'Overvecht','Bedrijventerrein Nieuw Overvecht');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3566,'Overvecht','Gageldijk');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3571,'Noordoost','Tuindorp');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3572,'Noordoost','Wittevrouwen');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3573,'Noordoost','Voordorp');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3581,'Oost','Buiten Wittevrouwen, Oudwijk, Wilhelminapark');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3582,'Oost','Tolsteegsingel eo, Sterrewijk, Abstede, Rubenslaan eo, Watervogelbuurt');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3583,'Oost','Schildersbuurt');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3584,'Oost','Galgenwaard');
+insert into postcodes (POSTCODE, WIJK, SUBWIJK) values (3585,'Oost','Maarschalkerweerd');
